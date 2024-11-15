@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Peças de Computador - TechPlus</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>TechPlus</h1>
+        <div id="cart-icon">
+            <span id="cart-count">0</span>
+            <img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="Carrinho" width="30">
+        </div>
+    </header>
+
+    <!-- Seção de Produtos e Carrinho -->
+    <section id="products">
+        <div class="product" data-name="Placa de Vídeo GTX 1660" data-price="1500">
+            <img src="image/placadevideo.jpg" alt="Placa de Vídeo GTX 1660">
+            <h2>Placa de Vídeo GTX 1660</h2>
+            <p>R$ 1500,00</p>
+            <button onclick="addToCart(this)">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="product" data-name="Processador Intel i9" data-price="1200">
+            <img src="image/i9.jpg" alt="Processador Intel i9">
+            <h2>Processador Intel i9</h2>
+            <p>R$ 1200,00</p>
+            <button onclick="addToCart(this)">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="product" data-name="Memória HyperX" data-price="300">
+            <img src="image/22386A.jpg" alt="Memória HyperX">
+            <h2>Memória HyperX</h2>
+            <p>R$ 300,00</p>
+            <button onclick="addToCart(this)">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="product" data-name="Computador Gamer" data-price="5200">
+            <img src="image/pczada.jpg" alt="Computador Gamer">
+            <h2>Computador Gamer</h2>
+            <p>R$ 5200,00</p>
+            <button onclick="addToCart(this)">Adicionar ao Carrinho</button>
+        </div>
+    </section>
+
+    <section id="cart">
+        <h2>Carrinho de Compras</h2>
+        <div id="cart-items"></div>
+        <p id="total-price">Total: R$ 0,00</p>
+    </section>
+
+    <button id="logout" onclick="logout()">Logout</button>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-section">
+            <h3>Contato</h3>
+            <p>Telefone: (11) 1234-5678</p>
+            <p>Email: contato@techplus.com.br</p>
+            <p>Endereço: Rua das Tecnologias, 123 - Rio de Janeiro, RJ</p>
+        </div>
+        <div class="footer-section">
+            <h3>SAC</h3>
+            <p>Atendimento ao Cliente: sac@techplus.com.br</p>
+            <p>Horário de Atendimento: Segunda a Sexta, das 9h às 18h</p>
+            <p>Telefone SAC: 0800-123-456</p>
+        </div>
+        <div class="footer-section">
+            <h3>Siga-nos</h3>
+            <a href="https://www.facebook.com/TechPlus" target="_blank">Facebook</a> |
+            <a href="https://www.instagram.com/TechPlus" target="_blank">Instagram</a> |
+            <a href="https://www.twitter.com/TechPlus" target="_blank">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
